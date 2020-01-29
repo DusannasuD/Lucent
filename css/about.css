@@ -1,0 +1,157 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+* {box-sizing: border-box;}
+
+body {
+	font-size: 100%;
+	font-family: "Century Gothic", sans-serif;
+	font-size-adjust: 0.58;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1em;
+	text-align: justify;
+	color: grey;
+}
+
+p.indent {text-indent: 40px;}
+
+p.description {
+	border-left: 6px dotted rgb(0, 255, 255);
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: auto; 
+  margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Logo */ 
+.logo { 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 10%;
+}
+
+/* Navigation menu */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 420px;
+}
+ul.breadcrumb li {
+  display: inline;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: grey;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+ul li a.current {color: coral;}
+
+/* Interwievs */
+.interwiev {
+	padding: 5px;
+	margin-top: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    color: grey;padding-left: 25px;
+}
+
+.interwiev:hover {
+	color: coral;
+}
+
+.naslov {
+	padding-left: 25px;
+	color: grey;
+	border-left: 6px solid coral;
+	text-indent: none;
+}
+
+/* Main container */
+.main {
+	width: 100%;   
+	box-sizing: border-box;
+	padding: 30px 100px;
+	margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  height: 80px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: powderblue;
+  clear: both;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  list-style-type: none;
+  padding-left: 15px;
+  color: lightcoral;
+}
+
+footer a:hover {
+  color: lightgrey;
+}
+
+.footer a:active {color: powderblue;}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: grey;
+}
+
+.fa-facebook {
+  color: white;
+  margin-left: 550px;
+  padding-left: 10px;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-behance {
+  color: white;
+  padding-left: 10px;
+}
