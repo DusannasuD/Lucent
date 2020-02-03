@@ -32,6 +32,7 @@ p.description {
 	padding: 0px;
 	box-sizing: border-box;
 	overflow: hidden;
+	box-shadow: 3px 3px 3px lightgrey;
 }
 
 /* Image 1 */
@@ -51,90 +52,137 @@ p.description {
 }
 
 /* Navigation menu */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  margin-top: 40px;
-  margin-left: 420px;
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 3px 3px lightgrey;
 }
+
+ul.breadcrumb {
+  padding: 18px 18px;
+  list-style: none;
+  padding-left: 100px;
+  background-color: rgb(230, 230, 230);
+}
+
 ul.breadcrumb li {
   display: inline;
 }
+
 ul.breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
 }
+
 ul.breadcrumb li a {
   color: grey;
   text-decoration: none;
 }
+
 ul.breadcrumb li a:hover {
   color: lightgrey;
   text-decoration: none;
 }
 
-ul li a.current {color: coral;}
-
-.lang {
-	float: right;
-	list-style-type: none;
-	text-decoration: none;
-	
-	color: grey;
-}
-
-.lang:hover {color: lightgrey;}
+ul li a.current {color: coral}
 
 /* Footer */
 footer {
-	height: 80px;
-	width: 100%;
-	margin-top: 50px;
-	padding: 15px;
-	box-sizing: border-box;
-	background-color: powderblue;
-	clear: both;
+	padding-left: 35px;
 }
 
 footer a {
-	display: inline-block;
-	text-decoration: none;
-	padding: 5px;
-	list-style-type: none;
-	padding-left: 15px;
-	color: lightcoral;
+	float: left;
+	padding: 25px 16px;
+	color: rgb(166, 166, 166);
+	transition: all 0.1s ease;
+	font-size: 23px;
 }
 
 footer a:hover {
-	color: lightgrey;
+	color: lightcoral;
 }
 
-.footer a:active {color: powderblue;}
+/* Hide mobile nav menu for screens greater than 630px */ 
+.mobile-container {
+  display: none;
+}
 
-.fa {
-  padding: 15px;
-  font-size: 25px;
-  width: 50px;
-  text-align: center;
+
+/* Smaller screen */
+
+@media only screen and (max-width: 630px) {
+
+/* Mobile nav menu */
+.mobile-container {
+  max-width: 630px;
+  margin: auto;
+  background-color: rgb(230, 230, 230);
+  height: 50px;
+  color: grey;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 4px 3px lightgrey;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(204, 230, 255);
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+  background-color: rgb(230, 243, 255);
+}
+
+.topnav #myLinks a:hover {
+  background-color: rgb(255, 255, 240);
+}
+
+.topnav a {
+  color: grey;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.fa:hover {
-	color: grey;
+.topnav a.icon {
+  background: rgb(128, 193, 255);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.fa-facebook {
+.topnav a:hover {
+  background-color: #ddd;
+  color: lightcoral;
+}
+
+.active {
+  background-color: #4CAF50;
   color: white;
-  margin-left: 550px;
-  padding-left: 10px;
 }
 
-.fa-instagram {
-  color: white;
+.logo {
+  margin-top: 20px;
 }
 
-.fa-behance {
-  color: white;
-  padding-left: 10px;
+/* Hide nav menu available on big screen*/
+ul.breadcrumb {display: none}
+
+
+/* Footer */
+footer {padding-left: 23px}
+
+footer a {
+  font-size: 19px;
+  padding: 20px 12px;
+}
 }
