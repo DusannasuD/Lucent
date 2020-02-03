@@ -46,34 +46,50 @@ p.description {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 10%;
+  width: 12%;
+  box-shadow: 3px 4px 4px lightgrey;
+}
+
+#llogo {
+  margin: auto;
 }
 
 /* Navigation menu */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  margin-top: 40px;
-  margin-left: 420px;
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 3px 3px lightgrey;
 }
+
+ul.breadcrumb {
+  padding: 18px 18px;
+  list-style: none;
+  padding-left: 100px;
+  background-color: rgb(230, 230, 230);
+}
+
 ul.breadcrumb li {
   display: inline;
 }
+
 ul.breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
 }
+
 ul.breadcrumb li a {
   color: grey;
   text-decoration: none;
 }
+
 ul.breadcrumb li a:hover {
   color: lightgrey;
   text-decoration: none;
 }
 
-ul li a.current {color: coral;}
+ul li a.current {color: coral}
 
 /* Image Gallery */
 .row {
@@ -129,53 +145,17 @@ ul li a.current {color: coral;}
 
 /* Footer */
 footer {
-  height: 80px;
-  width: 100%;
-  margin-top: 50px;
-  padding: 15px;
-  box-sizing: border-box;
-  background-color: powderblue;
-  clear: both;
+  padding-left: 35px;
 }
 
 footer a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px;
-  list-style-type: none;
-  padding-left: 15px;
-  color: lightcoral;
+  float: left;
+  padding: 25px 16px;
+  color: rgb(166, 166, 166);
+  transition: all 0.1s ease;
+  font-size: 23px;
 }
 
 footer a:hover {
-  color: lightgrey;
-}
-
-.footer a:active {color: powderblue;}
-
-.fa {
-  padding: 15px;
-  font-size: 25px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-  color: grey;
-}
-
-.fa-facebook {
-  color: white;
-  margin-left: 550px;
-  padding-left: 10px;
-}
-
-.fa-instagram {
-  color: white;
-}
-
-.fa-behance {
-  color: white;
-  padding-left: 10px;
+  color: lightcoral;
 }
