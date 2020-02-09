@@ -92,7 +92,7 @@ ul li a.current {color: coral}
 /* Main container */
 main {
   background-color: rgb(230, 247, 255);
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   height: 100%;
   overflow: hidden;
   width: 85%;
@@ -103,12 +103,11 @@ main {
 .mainimages {
   max-width: 50%;
   box-shadow: 3px 4px 3px lightgrey;
-  transition: max-width 0.5s, opacity 0.5s;
+  transition: opacity 0.5s;
   opacity: 1;
 }
 
 .mainimages:hover {
-  max-width: 52%;
   opacity: 0.7;
 }
 
@@ -222,15 +221,15 @@ aside hr {
   border-width: 0.2px;
 }
 
+/* Footer */
 footer hr {
   margin-left: 5%;
   margin-right: 10%;;
   color: lightgrey;
   border-style: solid;
-  border-width: 0.2px;
+  border-width: 0.4px;
 }
 
-/* Footer */
 footer {
 	padding-left: 35px;
   clear: both;
@@ -457,4 +456,3 @@ footer a {
   padding-right: 15px;
 }
 }
-
