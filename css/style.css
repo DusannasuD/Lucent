@@ -57,6 +57,7 @@ nav {
   position: sticky;
   top: 0;
   box-shadow: 4px 3px 3px lightgrey;
+  margin-bottom: 30px;
 }
 
 ul.breadcrumb {
@@ -88,9 +89,153 @@ ul.breadcrumb li a:hover {
 
 ul li a.current {color: coral}
 
+/* Main container */
+main {
+  background-color: rgb(230, 247, 255);
+  padding-bottom: 100px;
+  height: 100%;
+  overflow: hidden;
+  width: 85%;
+  float: left;
+  padding-top: 30px;
+}
+
+.mainimages {
+  max-width: 50%;
+  box-shadow: 3px 4px 3px lightgrey;
+  transition: max-width 0.5s, opacity 0.5s;
+  opacity: 1;
+}
+
+.mainimages:hover {
+  max-width: 52%;
+  opacity: 0.7;
+}
+
+#section1 {
+  padding: 20px 50px;
+}
+
+#section2 {
+  padding: 20px 50px;
+}
+
+#section2 .mainimages {
+  float: right;
+}
+
+#section3 {
+  padding: 20px 50px;
+}
+
+#section3 .mainimages {
+  clear: right;
+  float: left;
+  margin-top: 40px;
+}
+
+#section4 {
+  padding: 20px 50px; 
+}
+
+#section4 .mainimages {
+  clear: both;
+  float: right;
+  margin-top: 40px;
+}
+
+/* Side container - interwievs */
+aside {
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 230, 230);
+  overflow: hidden;
+}
+
+aside h3 {
+  color: rgb(102, 102, 102);
+  text-indent: 7px;
+  padding-right: 35px;
+  border-left: 6px solid coral;
+  float: right;
+}
+
+aside h4 {
+  color: rgb(102, 102, 102);
+  text-indent: 7px;
+  padding-right: 5px;
+  border-left: 6px solid coral;
+  float: right;
+}
+
+aside a {
+  list-style-type: none;
+  text-decoration: none;
+  color: grey;
+  padding-left: 35px;
+}
+
+.aicons {
+  padding-left: 20px;
+  font-size: 1.2em;
+  color: grey;
+}
+
+aside .aicons {
+  color: rgb(230, 230, 230);
+  transition: color 1.5s;
+}
+
+aside .aicons:hover {
+  color: grey;
+}
+
+aside .fa {
+  color: lightcoral;
+  padding-right: 10px;
+  padding-top: 15px;
+  transition: color 0.3s;
+  font-size: 1.2em;
+}
+
+aside .fa:hover {
+  color: lightgrey;
+}
+
+aside .fa.fa-facebook {
+  padding-right: 20px;
+}
+
+aside .fa.fa-instagram {
+  padding-right: 15px;
+}
+
+.interwiev:hover {
+  color: lightcoral;
+}
+
+aside hr {
+  width: 98%;
+  color: white;
+  border-style: solid;
+  border-width: 0.2px;
+}
+
+footer hr {
+  margin-left: 5%;
+  margin-right: 10%;;
+  color: lightgrey;
+  border-style: solid;
+  border-width: 0.2px;
+}
+
 /* Footer */
 footer {
 	padding-left: 35px;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 footer a {
@@ -99,10 +244,16 @@ footer a {
 	color: rgb(166, 166, 166);
 	transition: all 0.1s ease;
 	font-size: 23px;
+  transition: color 0.3s;
 }
 
 footer a:hover {
 	color: lightcoral;
+}
+
+#copyright {
+  float: right;
+  padding-right: 35px;
 }
 
 /* Hide mobile nav menu for screens greater than 630px */ 
@@ -113,26 +264,29 @@ footer a:hover {
 
 /* Smaller screen */
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 670px) {
 
+nav {
+  margin-bottom: 0;
+}
+ 
 /* Mobile nav menu */
 .mobile-container {
-  max-width: 630px;
+  max-width: 670px;
   margin: auto;
   background-color: rgb(230, 230, 230);
-  height: 50px;
+  height: 30px;
   color: grey;
   display: block;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  box-shadow: 4px 4px 3px lightgrey;
 }
 
 .topnav {
   overflow: hidden;
   background-color: rgb(204, 230, 255);
-  position: relative;
+  position: relative; 
 }
 
 .topnav #myLinks {
@@ -146,7 +300,7 @@ footer a:hover {
 
 .topnav a {
   color: grey;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -177,12 +331,40 @@ footer a:hover {
 /* Hide nav menu available on big screen*/
 ul.breadcrumb {display: none}
 
+/* Main container */
+#maincontainer {
+  background-color: rgb(230, 247, 255);
+  max-width: 670px;
+  margin: 0;
+  padding: 20px 30px;
+} 
+
+#maincontainer p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.mainimages {
+  max-width: 100%;
+  margin: 0;
+  box-shadow: 3px 4px 3px lightgrey;
+  margin-bottom: 30px;
+}
+
+.mainimages:hover {
+  max-width: 100%;
+}
 
 /* Footer */
-footer {padding-left: 23px}
+footer {padding-left: 20px}
 
 footer a {
-  font-size: 19px;
+  font-size: 18px;
   padding: 20px 12px;
+}
+
+#copyright {
+  font-size: 0.7em;
+  padding-right: 20px;
 }
 }
