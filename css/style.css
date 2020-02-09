@@ -440,19 +440,39 @@ footer a {
 }
 }
 
-/* Screens below 300px */
-@media only screen and (max-width: 300px) {
+/* Screens below 350px */
+@media only screen and (max-width: 350px) {
 
 /* Footer */
-footer {padding-left: 15px}
+footer {padding-left: 5px}
 
 footer a {
-  font-size: 17px;
-  padding: 20px 12px;
+  font-size: 15px;
+  padding: 20px 8px;
 }
 
 #copyright {
   font-size: 0.7em;
   padding-right: 15px;
+}
+}
+
+/* Screens lower than 210px */
+@media only screen and (max-width: 210px) {
+
+/* Footer */
+footer {padding-left: 2px}
+
+footer a {
+  font-size: 13px;
+  padding: 15px 0;
+  margin-left: 35px;
+  padding-bottom: 5px;
+}
+
+#copyright {
+  font-size: 0.7em;
+  margin-left: 15%;
+  text-align: center;
 }
 }
