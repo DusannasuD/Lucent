@@ -7,57 +7,91 @@
 <title>Lucent</title>
 <link rel="stylesheet" type="text/css" href="css/about.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="js/index.js"></script>
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
 </head>
 
 <body>
+
 <!-- Header -->
 <div class="header">
-	<img src="Images/img1.jpg" style="max-width: 100%" class="image1" usemap="#logo">
-
-		<map name="logo">
-			<area shape="circle" coords="1250, 100, 70, 250" alt="Lucent logo" href="index.html">
-		</map>
+    <img src="Images/img1.jpg" style="max-width: 100%" class="image1">
 </div>
 
 <!-- Navigation menu -->
 <nav>
-	<ul class="breadcrumb">
-		<li><a href="index.html">Početna</a></li>
-		<li><a href="prstenje.html" target:"blank">Prstenje</a></li>
-		<li><a href="ogrlice.html" target:"blank">Ogrlice</a></li>
-		<li><a href="narukvice.html" target:"blank">Narukvice</a></li>
-		<li><a class="current" href="about.html" target:"blank">O nama</a></li>
-		<li><a href="kontakt.html" target:"blank">Kontakt</a></li>
-	</ul>
-</nav><br><br><br>
+    <ul class="breadcrumb">
+	<li><a href="index.html">Početna</a></li>
+	<li><a href="prstenje.html" target:"blank">Prstenje</a></li>
+	<li><a href="ogrlice.html" target:"blank">Ogrlice</a></li>
+	<li><a href="narukvice.html" target:"blank">Narukvice</a></li>
+	<li><a class="current" href="about.html" target:"blank">O nama</a></li>
+	<li><a href="kontakt.html" target:"blank">Kontakt</a></li>
+    </ul>
+</nav>
+
+<!-- Mobile nav menu -->
+<div class="mobile-container">
+	<div class="topnav">	
+	  <a href="index.html"><i class="fa fa-home"></i></a>
+	  <div id="myLinks">
+        <a href="prstenje.html">Prstenje</a>
+	    <a href="ogrlice.html">Ogrlice</a>
+	    <a href="narukvice.html">Narukvice</a>
+	    <a href="about.html" class="current">O nama</a>
+	    <a href="kontakt.html">Kontakt</a>
+	  </div>
+	<a href="javascript:void(0);" class="icon" onclick="openMenu()">
+	  <i class="fa fa-bars"></i>
+	</a>
+    </div>
+</div>
+<!-- End mobile nav menu -->
+
+<!-- Logo -->
+<div id="llogo">
+    <img class="logo" src="Images/Lucent Logo.jpg" alt="Lucent logo">
+</div>
 
 <!-- Main container -->
-<div>
-  <img class="logo" src="Images/logo2.jpg" alt="Lucent logo">
-</div><br>
-
-<div class="main">
+<main>
+    <img src="Images/lucent logo 4.jpg" alt="Lucent logo">
+    <section>
+        <h3 class="naslov"><b>O nama:</b></h3><br>
 	<p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> are handmade, experimental, challenging and aesthetically authentic pieces of jewelry.</p><br>
 	<p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Primenjujući</span> tehnike starih zanata u procesu ručne izrade i poštujući prirodna svojstva materijala, kao i mogućnosti njihovog medjusobnog kombinovanja, 
 	<span style="padding-left: 13px;">Lucent</span> (engl. svetao) je izlet u polje primenjene umetnosti motivisan željom da se stvore estetski autentični i unikatni komadi nakita.<br> 
 	<span style="padding-left: 13px;">Lucent</span> je proces pažljivog odabiranja, kombinovanja, obrađivanja i improvizovanja koji uvažava definiciju nakita kao predmeta za ulepšavanje, ali i nastoji <span style="padding-left: 13px;">da</span> je redefiniše, smelo se poigravajući pre svega pojmom lepo kao i anatomskim zakonitostima koje neizbežno, unapred određuju njegov potencijal.</p><br> 
 	<p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je eksperiment.</p><br>
 	<p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je izazov.</p><br> 
-    <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je umetnost koja Vam je pri/na ruci.</p><br>
-    <br>
-    <h4 class="naslov" style="color: rgb(64, 64, 64);"><b>Intervjui:</b></h4><br>
-	<a class="interwiev" href="http://sparklyget.blogspot.com/2017/05/lucent-nakit-skulptura-kao-inspiracija.html" target="_blank">Get Sparkly</a><br><br>
-	<a class="interwiev" href="http://42magazin.rs/vesti/vladimir-zaharijevic/" target="_blank">42magazin</a>
+        <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je umetnost koja Vam je pri/na ruci.</p>
+    </section>
+</main>
+<!-- End of main container -->
+
+<!-- Main container for mobile -->
+<div id="mainmobile">
+    <h3 class="naslov"><b>O nama:</b></h3><br>
+    <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> are handmade, experimental, challenging and aesthetically authentic pieces of jewelry.</p><br>
+    <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Primenjujući</span> tehnike starih zanata u procesu ručne izrade i poštujući prirodna svojstva materijala, kao i mogućnosti njihovog medjusobnog kombinovanja, 
+    <span style="padding-left: 13px;">Lucent</span> (engl. svetao) je izlet u polje primenjene umetnosti motivisan željom da se stvore estetski autentični i unikatni komadi nakita.<br> 
+    <span style="padding-left: 13px;">Lucent</span> je proces pažljivog odabiranja, kombinovanja, obrađivanja i improvizovanja koji uvažava definiciju nakita kao predmeta za ulepšavanje, ali i nastoji <span style="padding-left: 13px;">da</span> je redefiniše, smelo se poigravajući pre svega pojmom lepo kao i anatomskim zakonitostima koje neizbežno, unapred određuju njegov potencijal.</p><br> 
+    <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je eksperiment.</p><br>
+    <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je izazov.</p><br> 
+    <p><span style="border-left: 6px dotted rgb(0, 255, 255); padding-left: 7px;">Lucent</span> je umetnost koja Vam je pri/na ruci.</p>
 </div>
+<!-- End of main container for mobile -->
 
 <!-- Footer -->
 <footer>
-		<a href="https://www.facebook.com/lucent.svetao/" target="_blank" class="fa fa-facebook" title="Facebook"><a>
-		<a href="https://www.instagram.com/lucent_zaharijevic/" target="_blank" class="fa fa-instagram" title="Instagram"><a>
-		<a href="https://www.behance.net/vlakisazez4cc5" target="_blank" class="fa fa-behance" title="Behance"><a>
+    <div><a href="https://www.facebook.com/lucent.svetao/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/lucent_zaharijevic/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.behance.net/vlakisazez4cc5" target="_blank" title="Behance"><i class="fa fa-behance"></i></a></div>
+    <div id="copyright"><p style="font-size: 0.9em">&copy; Copyright Lucent<br>
+    &reg; All content and graphics on this web site<br> are the property of the company Lucent</p></div>
 </footer>
+
 </body>
 </html>
